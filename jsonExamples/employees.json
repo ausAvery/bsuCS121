@@ -1,0 +1,17 @@
+[
+  {
+    "name": "John Doe",
+    "id": 1234,
+    "department": "Sales"
+  },
+  {
+    "name": "Jane Doe",
+    "id": 2345,
+    "department": "Accounting"
+  },
+  {
+    "name": "Tom Riddle",
+    "id": 3456,
+    "department": "HR"
+  }
+]

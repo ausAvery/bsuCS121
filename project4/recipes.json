@@ -1,0 +1,101 @@
+[
+  {
+    "recipe": "Iron Ingot",
+    "ingredient": "Iron Ore",
+    "amountIn": 1,
+    "product": "Iron Ingot",
+    "amountOut": 1,
+    "outputPerMachine": 30,
+    "machine": "Smelter",
+    "craftingTime": 2,
+    "powerUsage": 4
+  },
+  {
+    "recipe": "Iron Plate",
+    "ingredient": "Iron Ingot",
+    "amountIn": 3,
+    "product": "Iron Plate",
+    "amountOut": 2,
+    "outputPerMachine": 20,
+    "machine": "Constructor",
+    "craftingTime": 6,
+    "powerUsage": 4
+  },
+  {
+    "recipe": "Iron Rod",
+    "ingredient": "Iron Ingot",
+    "amountIn": 1,
+    "product": "Iron Rod",
+    "amountOut": 1,
+    "outputPerMachine": 15,
+    "machine": "Constructor",
+    "craftingTime": 4,
+    "powerUsage": 4
+  },
+  {
+    "recipe": "Screw",
+    "ingredient": "Iron Rod",
+    "amountIn": 1,
+    "product": "Screw",
+    "amountOut": 4,
+    "outputPerMachine": 40,
+    "machine": "Constructor",
+    "craftingTime": 6,
+    "powerUsage": 4
+  },
+  {
+    "recipe": "Copper Ingot",
+    "ingredient": "Copper Ore",
+    "amountIn": 1,
+    "product": "Copper Ingot",
+    "amountOut": 1,
+    "outputPerMachine": 30,
+    "machine": "Smelter",
+    "craftingTime": 2,
+    "powerUsage": 4
+  },
+  {
+    "recipe": "Copper Sheet",
+    "ingredient": "Copper Ingot",
+    "amountIn": 2,
+    "product": "Copper Sheet",
+    "amountOut": 1,
+    "outputPerMachine": 10,
+    "machine": "Constructor",
+    "craftingTime": 6,
+    "powerUsage": 4
+  },
+  {
+    "recipe": "Wire",
+    "ingredient": "Copper Ingot",
+    "amountIn": 1,
+    "product": "Wire",
+    "amountOut": 2,
+    "outputPerMachine": 30,
+    "machine": "Constructor",
+    "craftingTime": 4,
+    "powerUsage": 4
+  },
+  {
+    "recipe": "Cable",
+    "ingredient": "Wire",
+    "amountIn": 2,
+    "product": "Cable",
+    "amountOut": 1,
+    "outputPerMachine": 30,
+    "machine": "Constructor",
+    "craftingTime": 2,
+    "powerUsage": 4
+  },
+  {
+    "recipe": "Concrete",
+    "ingredient": "Limestone",
+    "amountIn": 3,
+    "product": "Concrete",
+    "amountOut": 1,
+    "outputPerMachine": 15,
+    "machine": "Constructor",
+    "craftingTime": 4,
+    "powerUsage": 4
+  }
+]
