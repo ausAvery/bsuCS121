@@ -1,20 +1,16 @@
 # bsuCS121
-CS121 OOP (Java)
 
-Learning how GitHub works
+Java assignments for BSU Course CS121
 
-## Look, we can make lists
+Learning GitHub writing and formatting syntax works for README.md
 
-* one
-* two
-* three
-* four
-* five
-
-### Look, we can make sub-lists
+## Second-level heading
 
 * one
 * two
 * three
 
-# Test
+### Third-level heading
+
+* **This is bold text**
+* *This is italicized text*
