@@ -10,6 +10,7 @@ public class Menu {
         int userChoice;
         String userResource;
         int userQuantity;
+        boolean keepGoing = true;
 
         // display initial menu options and get users choice
         System.out.printf("%s%s%s\n\n" +
@@ -20,23 +21,28 @@ public class Menu {
                 "Enter your choice (1-4) >> ", "=".repeat(3), "Satisfactory Calculator", "=".repeat(3));
         userChoice = Integer.parseInt(scanner.nextLine());
 
-        switch (userChoice) {
-            case 1:
-                resourcesAvailable.printRecipeList();
-                break;
-            case 2:
-                resourcesAvailable.printRecipeInformation();
-                displayMenu();
-                break;
-            case 3:
-                break;
-            case 4:
-                System.out.println("Exiting calculator...");
-                System.exit(0);
-            default:
-                System.out.print("Invalid entry, please try again.\n" +
-                        "\t>> ");
-                userChoice = Integer.parseInt(scanner.nextLine());
+        while (keepGoing) {
+            switch (userChoice) {
+                case 1:
+                    resourcesAvailable.printRecipeList();
+                    keepGoing = false;
+                    break;
+                case 2:
+                    resourcesAvailable.printRecipeInformation();
+                    displayMenu();
+                    keepGoing = false;
+                    break;
+                case 3:
+                    keepGoing = false;
+                    break;
+                case 4:
+                    System.out.println("Exiting calculator...");
+                    System.exit(0);
+                default:
+                    System.out.print("Invalid entry, please try again.\n" +
+                            "\t>> ");
+                    userChoice = Integer.parseInt(scanner.nextLine());
+            }
         }
 
         // display secondary menu options
@@ -119,9 +125,9 @@ public class Menu {
 
     public String printCalcResults(Recipe recipe, int qty, double amountIn, double machines, double power) {
         return String.format("\nTo craft %d %s(s) / min:\n" +
-                "\t- You need %.0f %s / min\n" +
-                "\t- Use %.3f %s(s)\n" +
-                "\t- Power usage: %.3f MW\n",
+                        "\t- You need %.0f %s / min\n" +
+                        "\t- Use %.3f %s(s)\n" +
+                        "\t- Power usage: %.3f MW\n",
                 qty, recipe.getRecipe(), amountIn, recipe.getIngredient(), machines, recipe.getMachine(), power);
     }
 }
